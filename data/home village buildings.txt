@@ -1,0 +1,68 @@
+Home Village Buildings
+
+Defensive Buildings 
+- Cannon 
+- Archer Tower 
+- Mortar 
+- Air Defense 
+- Wizard Tower 
+- Air Sweeper 
+- Hidden Tesla 
+- Bomb Tower 
+- X-Bow 
+- Inferno Tower 
+- Eagle Artillery 
+- Scattershot 
+- Builder's Hut 
+- Spell Tower 
+- Monolith 
+- Multi-Archer Tower 
+- Ricochet Cannon 
+- Multi-Gear Tower 
+- Firespitter 
+- Revenge Tower 
+- Super Wizard Tower 
+- Wall
+
+Traps: 
+- Bomb 
+- Spring Trap 
+- Air Bomb 
+- Giant Bomb 
+- Seeking Air Mine 
+- Skeleton Trap 
+- Tornado Trap 
+- Giga Bomb
+
+Resource Buildings  
+- Town Hall (Magic Items) 
+- Gold Mine 
+- Elixir Collector 
+- Dark Elixir Drill 
+- Gold Storage 
+- Elixir Storage 
+- Dark Elixir Storage 
+- Clan Castle (Treasury)
+
+Army Buildings  
+- Army Camp 
+- Barracks 
+- Dark Barracks 
+- Laboratory 
+- Spell Factory 
+- Hero Hall 
+- Hero Banner 
+- Dark Spell Factory 
+- Blacksmith 
+- Workshop 
+- Pet House
+
+## next iteration update
+## Crafting Station: Roaster • Air Bombs • Lava Launcher
+
+## Town Hall: 
+- Giga Tesla 
+- Giga Inferno (TH13, TH14, TH15, TH16) 
+- Inferno Artillery (TH17)
+- Guardians (Longshot • Smasher • Logger) (TH18)
+
