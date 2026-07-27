@@ -40,7 +40,12 @@ class StaticDataLoader:
     # Basic getters
     # --------------------------------------------------
 
-    def get_building(self, building_id: int) -> Optional[dict]:
+    def get_building(self, building_id) -> Optional[dict]:
+        try:
+            building_id = int(building_id)
+        except (TypeError, ValueError):
+            return None
+
         return self._id_map.get(building_id)
 
     def get_building_name(self, building_id: int) -> Optional[str]:
@@ -63,10 +68,17 @@ class StaticDataLoader:
         return len(self.buildings)
 
 # How to use
-# from core.static_data_loader import StaticDataLoader
+# from static_data_loader import StaticDataLoader
 # loader = StaticDataLoader("data/static_data.json")
 # print(loader.get_building_name(1000001)) # Town Hall
 # Mendapatkan seluruh informasi
-# building = loader.get_building(1000008)
+# print(loader.get_building(1000001))
 # Pencarian berdasarkan nama
-# loader.get_building_by_name("Wizard Tower")
+# print(loader.get_building_by_name("Wizard Tower"))
+
+# print(loader.total_buildings())
+# print(len(loader._id_map))
+# print(list(loader._id_map.keys())[:10])
+# print(type(next(iter(loader._id_map.keys()))))
+# print(1000001 in loader._id_map)
+# print(loader._id_map.get(1000001))
