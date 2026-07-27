@@ -1,2 +1,0 @@
-1. lengkapi buildings✅ (seadanya dulu, fokus ke bangunan dan luas)
-2. mengetahui jumlah dan level bangunan dari ID, export web pihak ke3
