@@ -1,3 +1,23 @@
+from pathlib import Path
+
+ASSET_DIR = Path("assets/buildings")
+
+def get_sprite_path(building_id, level):
+
+    if int(building_id) != 1000001:
+        return None
+
+    path = (
+        ASSET_DIR
+        / "1000001_townhall"
+        / f"Town_Hall{level}.webp"
+    )
+
+    if path.exists():
+        return path
+
+    return None
+
 BUILDING_COLORS = {
     1000001: "#FF0000",  # Town Hall
     1000031: "#FFD700",  # Eagle Artillery

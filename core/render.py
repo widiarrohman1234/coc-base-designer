@@ -1,5 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.patches import Rectangle
+from core.constants import BUILDING_COLORS   
 
 
 class BaseRenderer:
@@ -83,6 +85,7 @@ class BaseRenderer:
             )
 
             annotations.append({
+                "_id": building["_id"],
                 "text": building["name"],
                 "row": b["row"],
                 "col": b["col"],
@@ -107,7 +110,8 @@ class BaseRenderer:
             )
 
             annotations.append({
-                "text": "W",
+                "_id": wall["_id"],
+                "text": "",
                 "row": w["row"],
                 "col": w["col"],
                 "width": 1,
@@ -130,19 +134,19 @@ class BaseRenderer:
         base,
         annotations=None
     ):
+        fig, ax = plt.subplots(figsize=(10, 10))
 
-        fig, ax = plt.subplots(
-            figsize=(10, 10)
-        )
+        # ===================================================
+        # Background
+        # ===================================================
+        ax.set_facecolor("#f5f5f5")
 
-        ax.imshow(
-            base,
-            cmap="tab20",
-            origin="upper",
-            interpolation="none"
-        )
+        # ===================================================
+        # Grid
+        # ===================================================
+        ax.set_xlim(-0.5, self.map_size - 0.5)
+        ax.set_ylim(self.map_size - 0.5, -0.5)
 
-        # Major Tick
         ax.set_xticks(np.arange(self.map_size))
         ax.set_yticks(np.arange(self.map_size))
 
@@ -156,7 +160,6 @@ class BaseRenderer:
             fontsize=8
         )
 
-        # Minor Tick
         ax.set_xticks(
             np.arange(-0.5, self.map_size, 1),
             minor=True
@@ -180,19 +183,41 @@ class BaseRenderer:
             length=0
         )
 
+        # ===================================================
+        # Buildings
+        # ===================================================
         if annotations is not None:
 
             for ann in annotations:
 
+                color = BUILDING_COLORS.get(
+                    ann["_id"],
+                    "#AAAAAA"
+                )
+
+                rect = Rectangle(
+                    (
+                        ann["col"] - 0.5,
+                        ann["row"] - 0.5
+                    ),
+                    ann["width"],
+                    ann["height"],
+                    facecolor=color,
+                    edgecolor="black",
+                    linewidth=1
+                )
+
+                ax.add_patch(rect)
+
                 center_x = (
                     ann["col"]
-                    + ann["width"]/2
+                    + ann["width"] / 2
                     - 0.5
                 )
 
                 center_y = (
                     ann["row"]
-                    + ann["height"]/2
+                    + ann["height"] / 2
                     - 0.5
                 )
 
@@ -203,7 +228,8 @@ class BaseRenderer:
                     ha="center",
                     va="center",
                     fontsize=7,
-                    weight="bold"
+                    weight="bold",
+                    color="black"
                 )
 
         plt.tight_layout()
