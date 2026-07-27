@@ -96,3 +96,20 @@ id;code;name;level;dps;damage_per_hit;hitpoints;build_cost;build_time;experience
 5;TH;Town Hall;16;;;10000;15000000;9d;881;16;4x4;;;;;;1
 5;TH;Town Hall;17;;;10400;16000000;10d;929;17;4x4;;;;;;1
 5;TH;Town Hall;18;;;10800;25000000;12d;1018;18;4x4;;;;;;1
+6;WT;Wizard Tower;1;11;14.3;620;100.000;1h;60;5;3x3;7;7;1.3s;Splash - 1 tile;Ground & Air;1
+6;WT;Wizard Tower;2;13;16.9;650;150.000;1h 30m;73;5;3x3;7;7;1.3s;Splash - 1 tile;Ground & Air;1
+6;WT;Wizard Tower;3;16;20.8;680;250.000;4h;120;6;3x3;7;7;1.3s;Splash - 1 tile;Ground & Air;2
+6;WT;Wizard Tower;4;20;26;730;400.000;8h;169;7;3x3;7;7;1.3s;Splash - 1 tile;Ground & Air;2
+6;WT;Wizard Tower;5;24;31.2;840;550.000;10h;189;8;3x3;7;7;1.3s;Splash - 1 tile;Ground & Air;3
+6;WT;Wizard Tower;6;32;41.6;960;660.000;12h;207;8;3x3;7;7;1.3s;Splash - 1 tile;Ground & Air;3
+6;WT;Wizard Tower;7;40;52;1.200;1.000.000;18h;254;9;3x3;7;7;1.3s;Splash - 1 tile;Ground & Air;4
+6;WT;Wizard Tower;8;45;58.5;1.440;1.100.000;20h;268;10;3x3;7;7;1.3s;Splash - 1 tile;Ground & Air;4
+6;WT;Wizard Tower;9;50;65;1.600;1.300.000;1d;293;10;3x3;7;7;1.3s;Splash - 1 tile;Ground & Air;4
+6;WT;Wizard Tower;10;62;80.6;1.900;2.000.000;1d 6h;328;11;3x3;7;7;1.3s;Splash - 1 tile;Ground & Air;5
+6;WT;Wizard Tower;11;70;91;2.120;2.500.000;1d 12h;360;12;3x3;7;7;1.3s;Splash - 1 tile;Ground & Air;5
+6;WT;Wizard Tower;12;78;101.4;2.240;2.600.000;1d 18h;388;13;3x3;7;7;1.3s;Splash - 1 tile;Ground & Air;5
+6;WT;Wizard Tower;13;84;109.2;2.500;3.000.000;2d;415;13;3x3;7;7;1.3s;Splash - 1 tile;Ground & Air;5
+6;WT;Wizard Tower;14;90;117;2.800;4.500.000;3d;509;14;3x3;7;7;1.3s;Splash - 1 tile;Ground & Air;5
+6;WT;Wizard Tower;15;95;123.5;3.000;5.500.000;4d;587;15;3x3;7;7;1.3s;Splash - 1 tile;Ground & Air;5
+6;WT;Wizard Tower;16;102;132.6;3.150;8.000.000;4d 12h;623;16;3x3;7;7;1.3s;Splash - 1 tile;Ground & Air;5
+6;WT;Wizard Tower;17;110;143;3.300;14.000.000;5d 12h;689;17;3x3;7;7;1.3s;Splash - 1 tile;Ground & Air;5
