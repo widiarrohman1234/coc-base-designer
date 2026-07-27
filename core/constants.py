@@ -2,21 +2,38 @@ from pathlib import Path
 
 ASSET_DIR = Path("assets/buildings")
 
+from pathlib import Path
+from core.constants import ASSET_DIR
+
+
 def get_sprite_path(building_id, level):
+    """
+    Mengembalikan path sprite berdasarkan:
+    assets/buildings/1000001_townhall/Town_Hall13.webp
+    """
 
-    if int(building_id) != 1000001:
-        return None
+    building_id = int(building_id)
+    level = int(level)
 
-    path = (
-        ASSET_DIR
-        / "1000001_townhall"
-        / f"Town_Hall{level}.webp"
+    # cari folder yang diawali building_id
+    folders = list(
+        ASSET_DIR.glob(f"{building_id}_*")
     )
 
-    if path.exists():
-        return path
+    if not folders:
+        return None
 
-    return None
+    folder = folders[0]
+
+    # cari file yang mengandung level
+    files = list(
+        folder.glob(f"*{level}.webp")
+    )
+
+    if not files:
+        return None
+
+    return files[0]
 
 BUILDING_COLORS = {
     1000001: "#FF0000",  # Town Hall
@@ -56,3 +73,4 @@ BUILDING_COLORS = {
 
     1000010: "#000000",  # Wall
 }
+

@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
-from core.constants import BUILDING_COLORS   
+from core.constants import BUILDING_COLORS, get_sprite_path 
 
 
 class BaseRenderer:
@@ -86,6 +86,7 @@ class BaseRenderer:
 
             annotations.append({
                 "_id": building["_id"],
+                "level": b["level"],
                 "text": building["name"],
                 "row": b["row"],
                 "col": b["col"],
@@ -195,42 +196,63 @@ class BaseRenderer:
                     "#AAAAAA"
                 )
 
-                rect = Rectangle(
-                    (
-                        ann["col"] - 0.5,
-                        ann["row"] - 0.5
-                    ),
-                    ann["width"],
-                    ann["height"],
-                    facecolor=color,
-                    edgecolor="black",
-                    linewidth=1
+                sprite_path = get_sprite_path(
+                    ann["_id"],
+                    ann["level"]
                 )
 
-                ax.add_patch(rect)
+                if sprite_path is not None:
 
-                center_x = (
-                    ann["col"]
-                    + ann["width"] / 2
-                    - 0.5
-                )
+                    image = plt.imread(sprite_path)
 
-                center_y = (
-                    ann["row"]
-                    + ann["height"] / 2
-                    - 0.5
-                )
+                    ax.imshow(
+                        image,
+                        extent=[
+                            ann["col"] - 0.5,
+                            ann["col"] + ann["width"] - 0.5,
+                            ann["row"] + ann["height"] - 0.5,
+                            ann["row"] - 0.5,
+                        ],
+                        zorder=10,
+                    )
 
-                ax.text(
-                    center_x,
-                    center_y,
-                    ann["text"],
-                    ha="center",
-                    va="center",
-                    fontsize=7,
-                    weight="bold",
-                    color="black"
-                )
+                else:
+                    rect = Rectangle(
+                        (
+                            ann["col"] - 0.5,
+                            ann["row"] - 0.5
+                        ),
+                        ann["width"],
+                        ann["height"],
+                        facecolor=color,
+                        edgecolor="black",
+                        linewidth=1
+                    )
+
+                    ax.add_patch(rect)
+
+                    center_x = (
+                        ann["col"]
+                        + ann["width"] / 2
+                        - 0.5
+                    )
+
+                    center_y = (
+                        ann["row"]
+                        + ann["height"] / 2
+                        - 0.5
+                    )
+
+                    ax.text(
+                        center_x,
+                        center_y,
+                        ann["text"],
+                        ha="center",
+                        va="center",
+                        fontsize=7,
+                        weight="bold",
+                        color="black"
+                    )
 
         plt.tight_layout()
 
