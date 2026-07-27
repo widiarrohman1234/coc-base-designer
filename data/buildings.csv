@@ -113,3 +113,79 @@ id;code;name;level;dps;damage_per_hit;hitpoints;build_cost;build_time;experience
 6;WT;Wizard Tower;15;95;123.5;3.000;5.500.000;4d;587;15;3x3;7;7;1.3s;Splash - 1 tile;Ground & Air;5
 6;WT;Wizard Tower;16;102;132.6;3.150;8.000.000;4d 12h;623;16;3x3;7;7;1.3s;Splash - 1 tile;Ground & Air;5
 6;WT;Wizard Tower;17;110;143;3.300;14.000.000;5d 12h;689;17;3x3;7;7;1.3s;Splash - 1 tile;Ground & Air;5
+7;AS;Air Sweeper;1;;;750;200.000;4h;120;6;2x2;;;;;;1
+7;AS;Air Sweeper;2;;;800;300.000;6h;146;6;2x2;;;;;;1
+7;AS;Air Sweeper;3;;;850;450.000;8h;169;7;2x2;;;;;;1
+7;AS;Air Sweeper;4;;;900;800.000;12h;207;8;2x2;;;;;;1
+7;AS;Air Sweeper;5;;;950;1.200.000;1d;293;9;2x2;;;;;;2
+7;AS;Air Sweeper;6;;;1.000;1.900.000;2d;415;10;2x2;;;;;;2
+7;AS;Air Sweeper;7;;;1.050;3.400.000;3d;509;11;2x2;;;;;;2
+8;HT;Hidden Tesla;1;34;20.4;600;250.000;2h;84;7;2x2;7;7;0.6s;Single Target;Ground & Air;2
+8;HT;Hidden Tesla;2;40;24;630;350.000;3h;103;7;2x2;7;7;0.6s;Single Target;Ground & Air;2
+7;AS;Air Sweeper;3;48;28.8;660;500.000;4h;120;7;2x2;7;7;0.6s;Single Target;Ground & Air;2
+7;AS;Air Sweeper;4;55;33;690;600.000;6h;146;8;2x2;7;7;0.6s;Single Target;Ground & Air;3
+7;AS;Air Sweeper;5;64;38.4;730;800.000;12h;207;8;2x2;7;7;0.6s;Single Target;Ground & Air;3
+7;AS;Air Sweeper;6;75;45;770;1.200.000;1d;293;8;2x2;7;7;0.6s;Single Target;Ground & Air;3
+7;AS;Air Sweeper;7;87;52.2;810;1.400.000;1d 6h;328;9;2x2;7;7;0.6s;Single Target;Ground & Air;4
+7;AS;Air Sweeper;8;99;59.4;850;1.600.000;1d 12h;360;10;2x2;7;7;0.6s;Single Target;Ground & Air;4
+7;AS;Air Sweeper;9;110;66;900;2.100.000;1d 18h;388;11;2x2;7;7;0.6s;Single Target;Ground & Air;4
+7;AS;Air Sweeper;10;120;72;980;3.000.000;2d;415;12;2x2;7;7;0.6s;Single Target;Ground & Air;5
+7;AS;Air Sweeper;11;130;78;1.100;3.100.000;2d 12h;464;13;2x2;7;7;0.6s;Single Target;Ground & Air;5
+7;AS;Air Sweeper;12;140;84;1.200;3.700.000;3d;509;13;2x2;7;7;0.6s;Single Target;Ground & Air;5
+7;AS;Air Sweeper;13;150;90;1.350;5.100.000;3d 12h;549;14;2x2;7;7;0.6s;Single Target;Ground & Air;5
+7;AS;Air Sweeper;14;160;96;1.450;6.500.000;4d;587;15;2x2;7;7;0.6s;Single Target;Ground & Air;5
+7;AS;Air Sweeper;15;170;102;1.550;8.200.000;5d;657;16;2x2;7;7;0.6s;Single Target;Ground & Air;5
+7;AS;Air Sweeper;16;180;108;1.650;15.000.000;7d;777;17;2x2;7;7;0.6s;Single Target;Ground & Air;5
+7;AS;Air Sweeper;17;190;114;1.750;25.000.000;13d;1.059;18;2x2;7;7;0.6s;Single Target;Ground & Air;5
+9;BT;Bomb Tower;1;24;26.4;650;700.000;12h;207;8;3x3;6;6;1.1s;Splash - 1.5 tiles;Ground;1
+9;BT;Bomb Tower;2;28;30.8;700;1.000.000;18h;254;8;3x3;6;6;1.1s;Splash - 1.5 tiles;Ground;1
+9;BT;Bomb Tower;3;32;35.2;750;1.300.000;1d;293;9;3x3;6;6;1.1s;Splash - 1.5 tiles;Ground;1
+9;BT;Bomb Tower;4;40;44;850;1.800.000;1d 12h;360;10;3x3;6;6;1.1s;Splash - 1.5 tiles;Ground;2
+9;BT;Bomb Tower;5;48;52.8;1.050;1.900.000;1d 18h;388;11;3x3;6;6;1.1s;Splash - 1.5 tiles;Ground;2
+9;BT;Bomb Tower;6;56;61.6;1.300;2.000.000;2d;415;11;3x3;6;6;1.1s;Splash - 1.5 tiles;Ground;2
+9;BT;Bomb Tower;7;64;70.4;1.600;4.000.000;3d;509;12;3x3;6;6;1.1s;Splash - 1.5 tiles;Ground;2
+9;BT;Bomb Tower;8;72;79.2;1.900;5.000.000;3d 12h;549;13;3x3;6;6;1.1s;Splash - 1.5 tiles;Ground;2
+9;BT;Bomb Tower;9;84;92.4;2.300;6.000.000;4d;587;14;3x3;6;6;1.1s;Splash - 1.5 tiles;Ground;2
+9;BT;Bomb Tower;10;94;103.4;2.500;7.000.000;4d 12h;623;15;3x3;6;6;1.1s;Splash - 1.5 tiles;Ground;2
+9;BT;Bomb Tower;11;104;114.4;2.700;8.500.000;5d;657;16;3x3;6;6;1.1s;Splash - 1.5 tiles;Ground;2
+9;BT;Bomb Tower;12;114;125.4;2.900;14.500.000;7d;777;17;3x3;6;6;1.1s;Splash - 1.5 tiles;Ground;2
+9;BT;Bomb Tower;13;122;134.2;3.050;25.000.000;13d;1.059;18;3x3;6;6;1.1s;Splash - 1.5 tiles;Ground;2
+10;XB;X Bow;1;60;7.68;1.500;1.000.000;12h;207;9;3x3;14;14;0.128s;Single Target;Ground & Air;2
+10;XB;X Bow;2;70;8.96;1.900;1.200.000;1d;293;9;3x3;14;14;0.128s;Single Target;Ground & Air;2
+10;XB;X Bow;3;80;10.24;2.300;2.400.000;2d;415;9;3x3;14;14;0.128s;Single Target;Ground & Air;2
+10;XB;X Bow;4;85;10.88;2.700;2.500.000;2d 12h;464;10;3x3;14;14;0.128s;Single Target;Ground & Air;3
+10;XB;X Bow;5;95;12.16;3.100;3.900.000;3d;509;11;3x3;14;14;0.128s;Single Target;Ground & Air;4
+10;XB;X Bow;6;110;14.08;3.400;5.000.000;3d 12h;549;12;3x3;14;14;0.128s;Single Target;Ground & Air;4
+10;XB;X Bow;7;130;16.64;3.700;6.000.000;4d;587;13;3x3;14;14;0.128s;Single Target;Ground & Air;4
+10;XB;X Bow;8;155;19.84;4.000;7.000.000;4d 12h;623;13;3x3;14;14;0.128s;Single Target;Ground & Air;4
+10;XB;X Bow;9;185;23.68;4.200;9.000.000;5d;657;14;3x3;14;14;0.128s;Single Target;Ground & Air;4
+10;XB;X Bow;10;205;26.24;4.400;9.500.000;5d 12h;689;15;3x3;14;14;0.128s;Single Target;Ground & Air;4
+10;XB;X Bow;11;225;28.8;4.600;10.000.000;6d;720;16;3x3;14;14;0.128s;Single Target;Ground & Air;4
+10;XB;X Bow;12;235;30.08;4.800;16.000.000;8d;831;17;3x3;14;14;0.128s;Single Target;Ground & Air;4
+10;XB;X Bow;13;245;31.36;5.000;26.000.000;13d 12h;1.080;18;3x3;14;14;0.128s;Single Target;Ground & Air;4
+11;IT;Inferno Tower;1;800;102.4;1.500;1.000.000;12h;207;10;2x2;9;9;0.128s;Single Target;Ground & Air;2
+11;IT;Inferno Tower;2;1.000;128;1.800;1.200.000;1d;293;10;2x2;9;9;0.128s;Single Target;Ground & Air;2
+11;IT;Inferno Tower;3;1.200;153.6;2.100;2.400.000;2d;415;10;2x2;9;9;0.128s;Single Target;Ground & Air;2
+11;IT;Inferno Tower;4;1.400;179.2;2.400;3.400.000;2d 12h;464;11;2x2;9;9;0.128s;Single Target;Ground & Air;2
+11;IT;Inferno Tower;5;1.500;192;2.700;4.200.000;3d;509;11;2x2;9;9;0.128s;Single Target;Ground & Air;2
+11;IT;Inferno Tower;6;1.600;204.8;3.000;6.000.000;4d;587;12;2x2;9;9;0.128s;Single Target;Ground & Air;3
+11;IT;Inferno Tower;7;1.800;230.4;3.300;8.000.000;5d;657;13;2x2;9;9;0.128s;Single Target;Ground & Air;3
+11;IT;Inferno Tower;8;2.100;268.8;3.700;9.500.000;6d;720;14;2x2;9;9;0.128s;Single Target;Ground & Air;3
+11;IT;Inferno Tower;9;2.300;294.4;4.000;10.000.000;6d 12h;749;15;2x2;9;9;0.128s;Single Target;Ground & Air;3
+11;IT;Inferno Tower;10;2.600;332.8;4.400;11.000.000;7d;777;16;2x2;9;9;0.128s;Single Target;Ground & Air;3
+11;IT;Inferno Tower;11;2.900;371.2;4.800;16.000.000;8d;831;17;2x2;9;9;0.128s;Single Target;Ground & Air;3
+11;IT;Inferno Tower;12;3.300;422.4;5.100;26.500.000;13d 12h;1.080;18;2x2;9;9;0.128s;Single Target;Ground & Air;3
+12;EA;Eagle Artilery;1;225;67.5;4.000;5.000.000;4d;587;11;4x4;7;50;0.75s;Splash - 0.75 tiles for main shot;Ground & Air;1
+12;EA;Eagle Artilery;2;250;75;4.400;6.000.000;5d;657;11;4x4;7;50;0.75s;Splash - 0.75 tiles for main shot;Ground & Air;1
+12;EA;Eagle Artilery;3;275;82.5;4.800;9.000.000;7d;777;12;4x4;7;50;0.75s;Splash - 0.75 tiles for main shot;Ground & Air;1
+12;EA;Eagle Artilery;4;350;105;5.200;10.000.000;7d 12h;804;13;4x4;7;50;0.75s;Splash - 0.75 tiles for main shot;Ground & Air;1
+12;EA;Eagle Artilery;5;425;127.5;5.600;12.000.000;8d;831;14;4x4;7;50;0.75s;Splash - 0.75 tiles for main shot;Ground & Air;1
+12;EA;Eagle Artilery;6;475;142.5;5.900;13.000.000;9d;881;15;4x4;7;50;0.75s;Splash - 0.75 tiles for main shot;Ground & Air;1
+12;EA;Eagle Artilery;7;525;157.5;6.200;14.000.000;9d 12h;905;16;4x4;7;50;0.75s;Splash - 0.75 tiles for main shot;Ground & Air;1
+13;SHT;Scattershot;1;125;300-400;3.600;8.000.000;5d;657;13;3x3;3;10;3.2s;Area Splash;Ground & Air;2
+13;SHT;Scattershot;2;150;360-480;4.200;9.000.000;7d;777;13;3x3;3;10;3.2s;Area Splash;Ground & Air;2
+13;SHT;Scattershot;3;170;380-544;4.800;11.000.000;7d 12h;804;14;3x3;3;10;3.2s;Area Splash;Ground & Air;2
+13;SHT;Scattershot;4;175;400-560;5.100;11.500.000;8d;831;15;3x3;3;10;3.2s;Area Splash;Ground & Air;2
+13;SHT;Scattershot;5;180;420-576;5.410;12.000.000;8d 12h;856;16;3x3;3;10;3.2s;Area Splash;Ground & Air;2
+13;SHT;Scattershot;6;185;440-592;5.600;16.500.000;9d;881;17;3x3;3;10;3.2s;Area Splash;Ground & Air;2
+13;SHT;Scattershot;7;190;450-608;5.800;26.500.000;15d;1.138;18;3x3;3;10;3.2s;Area Splash;Ground & Air;2
