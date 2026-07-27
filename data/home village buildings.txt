@@ -1,11 +1,13 @@
 Home Village Buildings
 
 Defensive Buildings 
-- Cannon 
-- Archer Tower 
-- Mortar 
-- Air Defense 
+- Cannon ✅
+- Archer Tower✅ 
+- Mortar ✅
+- Wall ✅
+- Town Hall ✅
 - Wizard Tower 
+- Air Defense 
 - Air Sweeper 
 - Hidden Tesla 
 - Bomb Tower 
@@ -22,7 +24,6 @@ Defensive Buildings
 - Firespitter 
 - Revenge Tower 
 - Super Wizard Tower 
-- Wall
 
 Traps: 
 - Bomb 
