@@ -72,6 +72,13 @@ class BaseRenderer:
         for b in layout["buildings"]:
             building = self.loader.get_building(int(b["_id"]))
 
+            if int(b["_id"]) == 1000001:
+                print("Layout:")
+                print(b)
+
+                print("\nBuilding:")
+                print(building)    
+
             width = building["width"]
             height = building["width"]
 
@@ -100,7 +107,6 @@ class BaseRenderer:
         wall = self.loader.get_building(1000010)
 
         for w in layout["walls"]:
-
             self.place_building(
                 base,
                 w["row"],
@@ -112,12 +118,15 @@ class BaseRenderer:
 
             annotations.append({
                 "_id": wall["_id"],
+                "level": 1,
                 "text": "",
                 "row": w["row"],
                 "col": w["col"],
                 "width": 1,
                 "height": 1
             })
+
+        # print(f"annotations: {annotations}")
 
         fig, ax = self.show_map(
             base,
@@ -198,14 +207,11 @@ class BaseRenderer:
 
                 sprite_path = get_sprite_path(
                     ann["_id"],
-                    1
-                    # ann["level"] 
+                    ann["level"] 
                 )
 
                 if sprite_path is not None:
-
                     image = plt.imread(sprite_path)
-
                     ax.imshow(
                         image,
                         extent=[
@@ -216,20 +222,8 @@ class BaseRenderer:
                         ],
                         zorder=10,
                     )
-
-                    if sprite_path is not None:
-                        image = plt.imread(sprite_path)
-                        ax.imshow(
-                            image,
-                            extent=[
-                                ann["col"] - 0.5,
-                                ann["col"] + ann["width"] - 0.5,
-                                ann["row"] + ann["height"] - 0.5,
-                                ann["row"] - 0.5,
-                            ],
-                            zorder=10,
-                        )
-
+                    # selain pagar diborder
+                    if int(ann["_id"]) != 1000010:
                         # Border
                         rect = Rectangle(
                             (
@@ -283,35 +277,6 @@ class BaseRenderer:
                         weight="bold",
                         color="black"
                     )
-
-        # -------------------------
-        # Walls
-        # -------------------------
-        wall = self.loader.get_building(1000010)
-
-        for w in base["walls"]:
-
-            self.place_building(
-                base,
-                w["row"],
-                w["col"],
-                wall["width"],
-                wall["width"],
-                wall["_id"]
-            )
-
-            annotations.append({
-                "text": "W",
-                "row": w["row"],
-                "col": w["col"],
-                "width": 1,
-                "height": 1
-            })
-
-        fig, ax = self.show_map(
-            base,
-            annotations
-        )
 
         plt.tight_layout()
 
