@@ -217,6 +217,35 @@ class BaseRenderer:
                         zorder=10,
                     )
 
+                    if sprite_path is not None:
+                        image = plt.imread(sprite_path)
+                        ax.imshow(
+                            image,
+                            extent=[
+                                ann["col"] - 0.5,
+                                ann["col"] + ann["width"] - 0.5,
+                                ann["row"] + ann["height"] - 0.5,
+                                ann["row"] - 0.5,
+                            ],
+                            zorder=10,
+                        )
+
+                        # Border
+                        rect = Rectangle(
+                            (
+                                ann["col"] - 0.5,
+                                ann["row"] - 0.5
+                            ),
+                            ann["width"],
+                            ann["height"],
+                            fill=False,
+                            edgecolor="black",
+                            linewidth=1.5,
+                            zorder=20
+                        )
+
+                        ax.add_patch(rect)
+
                 else:
                     rect = Rectangle(
                         (
