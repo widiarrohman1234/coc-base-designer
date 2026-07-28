@@ -198,7 +198,8 @@ class BaseRenderer:
 
                 sprite_path = get_sprite_path(
                     ann["_id"],
-                    ann["level"]
+                    1
+                    # ann["level"] 
                 )
 
                 if sprite_path is not None:
@@ -253,6 +254,35 @@ class BaseRenderer:
                         weight="bold",
                         color="black"
                     )
+
+        # -------------------------
+        # Walls
+        # -------------------------
+        wall = self.loader.get_building(1000010)
+
+        for w in base["walls"]:
+
+            self.place_building(
+                base,
+                w["row"],
+                w["col"],
+                wall["width"],
+                wall["width"],
+                wall["_id"]
+            )
+
+            annotations.append({
+                "text": "W",
+                "row": w["row"],
+                "col": w["col"],
+                "width": 1,
+                "height": 1
+            })
+
+        fig, ax = self.show_map(
+            base,
+            annotations
+        )
 
         plt.tight_layout()
 

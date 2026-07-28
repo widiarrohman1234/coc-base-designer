@@ -185,3 +185,51 @@ Helper Hut         -> HP
         }
         ```
 
+----------------------------------------
+Assets
+
+1. Defence 🔃
+    - Cannon ✅
+    - Archer Tower ✅
+    - Mortar ✅
+    - Air Defence ✅
+    - Wizard Tower ✅
+    - Air Sweeper ✅
+    - Hidden Tesla ✅
+    - Bomb Tower ✅
+    - X-Bow ✅
+    - Wall ✅
+    - Inferno ✅
+    - Eagle Artillery ✅
+    - Scattershot ✅
+    - Builder Hut ✅
+    - Spell Tower ✅
+    - Monolith ✅
+    - Multi Archer Tower
+    - Richochet Cannon
+    - Multi Gear Tower
+    - Firespitter
+    - Revenge Tower
+    - Super Wizard Tower
+2. Resource ✅
+    - Town Hall ✅
+    - Gold Mine ✅
+    - Elixir Collector ✅
+    - Gold Storage ✅
+    - Elixir Collector ✅
+    - Dark Elixir Drill ✅
+    - Dark Elixir Storage ✅
+    - Clan Castle ✅
+3. Army ✅
+    - Army Camp ✅
+    - Barracks ✅
+    - Dark Barracks ✅
+    - Laboratory ✅
+    - Spell Factory ✅
+    - Hero Hall ✅
+    - Hero Banner ❓(tidak ada _id nya)
+    - Dark Spell Factory ✅
+    - Blacksmith ✅
+    - Workshop ✅
+    - Pet House ✅
+
