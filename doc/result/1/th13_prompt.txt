@@ -1,0 +1,144 @@
+You are an expert Clash of Clans Home Village Base Designer.
+Your task is to design a COMPLETE Clash of Clans Home Village layout.
+
+Village Information
+
+- Town Hall Level: 13
+- Map Size: 44 x 44
+
+Base Style: Farming Base
+Primary Defensive Objective: Electro Dragon
+
+Design Priorities (highest to lowest)
+1. All placement rules MUST be satisfied.
+2. No overlapping buildings.
+3. Town Hall must be difficult to reach.
+4. Clan Castle should cover the Town Hall.
+5. Eagle Artillery should be protected.
+6. Scattershots should be separated.
+7. Inferno Towers should not be adjacent.
+8. Heroes should help protect the Town Hall.
+9. Storages should be used as defensive buffers.
+10. Army buildings should be placed outside the core.
+11. Collectors should be placed near the outer ring.
+12. Builder Huts should occupy corners whenever possible.
+13. Walls should create multiple compartments instead of one large compartment.
+14. Symmetry is preferred but not required.
+
+Before returning the JSON, internally verify all of the following:
+✓ Every building count is correct.
+✓ Every wall count is correct.
+✓ No buildings overlap.
+✓ Every building is inside the map.
+✓ Town Hall exists exactly once.
+✓ Clan Castle exists exactly once.
+✓ Every building uses the correct level.
+✓ Every building uses the correct _id.
+✓ Every wall occupies exactly one tile.
+If any rule is violated,
+correct the layout before producing the final JSON.
+
+Preferred Spacing Rules
+• Eagle Artillery should not touch the Town Hall.
+• Scattershots should be separated.
+• Inferno Towers should protect different compartments.
+• Air Defenses should cover different quadrants.
+• X-Bows should cover the Town Hall.
+• Bomb Towers should protect storages.
+• Wizard Towers should cover resource storages.
+• Mortars should not all be clustered together.
+• Air Sweepers should point toward expected attack paths.
+
+Forbidden Layouts
+- Never place
+- Town Hall beside Eagle.
+- Scattershots beside each other.
+- Infernos beside each other.
+- All Air Defenses on one side.
+- All Heroes together.
+- Large empty areas.
+- Disconnected walls.
+- Single compartment bases.
+- Buildings outside walls without reason.
+
+Internally follow this order.
+Step 1: Place Town Hall.
+Step 2: Place Clan Castle.
+Step 3: Place Eagle.
+Step 4: Place Scattershots.
+Step 5: Place Infernos.
+Step 6: Place Air Defenses.
+Step 7: Place X-Bows.
+Step 8: Create wall compartments.
+Step 9: Place remaining defenses.
+Step 10: Place storages.
+Step 11: Place collectors.
+Step 12: Place army buildings.
+Step 13: Place Builder Huts.
+
+Only after all placements satisfy the constraints,
+return the JSON.
+
+Building List
+	id	name	count	level	size	category	village
+0	1000001	Town Hall	1	13	[4, 4]	Town Hall	home
+1	1000014	Clan Castle	1	9	[3, 3]	Army	home
+2	1000031	Eagle Artillery	1	4	[4, 4]	Defense	home
+3	1000067	Scattershot	2	2	[3, 3]	Defense	home
+4	1000027	Inferno Tower	3	6	[2, 2]	Defense	home
+5	1000021	X-Bow	4	5	[3, 3]	Defense	home
+6	1000012	Air Defense	4	9	[3, 3]	Defense	home
+7	1000028	Air Sweeper	2	7	[2, 2]	Defense	home
+8	1000009	Archer Tower	8	15	[3, 3]	Defense	home
+9	1000000	Army Camp	4	11	[4, 4]	Army	home
+10	1000006	Barracks	1	15	[3, 3]	Army	home
+11	1000070	Blacksmith	1	6	[3, 3]	Army	home
+12	1000032	Bomb Tower	2	6	[3, 3]	Defense	home
+13	1000015	Builder's Hut	5	1	[2, 2]	Worker	home
+14	1000008	Cannon	7	19	[3, 3]	Defense	home
+15	1000026	Dark Barracks	1	10	[3, 3]	Army	home
+16	1000023	Dark Elixir Drill	3	9	[3, 3]	Resource	home
+17	1000024	Dark Elixir Storage	1	8	[3, 3]	Resource	home
+18	1000029	Dark Spell Factory	1	6	[3, 3]	Army	home
+19	1000002	Elixir Collector	7	15	[3, 3]	Resource	home
+20	1000003	Elixir Storage	4	14	[3, 3]	Resource	home
+21	1000004	Gold Mine	7	15	[3, 3]	Resource	home
+22	1000005	Gold Storage	4	14	[3, 3]	Resource	home
+23	1000093	Helper Hut	1	1	[3, 3]	Helper	home
+24	1000071	Hero Hall	1	7	[4, 4]	Army	home
+25	1000019	Hidden Tesla	5	9	[2, 2]	Defense	home
+26	1000007	Laboratory	1	11	[3, 3]	Army	home
+27	1000013	Mortar	4	12	[3, 3]	Defense	home
+28	1000020	Spell Factory	1	7	[3, 3]	Army	home
+29	1000010	Wall	300	14	[1, 1]	Wall	home
+30	1000011	Wizard Tower	5	10	[3, 3]	Defense	home
+31	1000059	Workshop	1	5	[4, 4]	Army	home
+
+Output Format
+
+Return ONLY valid JSON.
+
+Do not use markdown.
+Do not explain anything.
+Do not write comments.
+
+The JSON schema MUST be:
+
+{
+    "townhall_level": 13,
+    "buildings": [
+        {
+            "_id" = "1000001"
+            "level": 13,
+            "row": 20,
+            "col": 20
+        }
+    ],
+    "walls": [
+        {
+            "row": 18,
+            "col": 19
+        }
+    ]
+}
+

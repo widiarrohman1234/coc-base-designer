@@ -1,7 +1,7 @@
 Perencanaan COC Base Designer
 ✅1. export buildings player dari export copy-paste json
 ✅2. dapatkan informasi penting untuk tata letak base, seperti (jumlah, jenis dan ukuran bangun) 
-3. berikan kepada chatGPT untuk merancang tata letak berdasarkan jumlah dan jenis bangunan yang ada.
+✅3. berikan kepada chatGPT untuk merancang tata letak berdasarkan jumlah dan jenis bangunan yang ada.
    - apa tujuan desainnya (anti apa?)
    - apa yang di prioritaskan?
    - contoh prompt
@@ -232,4 +232,46 @@ Assets
     - Blacksmith ✅
     - Workshop ✅
     - Pet House ✅
+
+Base Style
+    - Ring Base
+    - Diamond Base
+    - Box Base
+    - Anti 2-Star Base
+    - Anti 3-Star Base
+    - Hybrid Base
+    - Trophy Base
+    - Farming Base
+    - War Base
+    - Progress Base
+    - Island Town Hall
+    - Centralized Core
+    - Offset Town Hall
+
+Primary Defensive Objective
+    - Anti Electro Dragon
+    - Anti Root Rider
+    - Anti Queen Charge
+    - Anti Lavaloon
+    - Anti Hog Rider
+    - Anti Hybrid Miner
+    - Anti Dragon
+    - Anti Balloon
+    - Anti Ground Spam
+    - Anti Air Spam
+
+| Preset                      | Fokus Pertahanan     | Karakteristik                                                                                  |
+| --------------------------- | -------------------- | ---------------------------------------------------------------------------------------------- |
+| **Hybrid**                  | Trophy + Resource    | Town Hall dan storage sama-sama terlindungi.                                                   |
+| **War Base**                | Anti 3-Star          | Kompartemen banyak, core sangat kuat, jebakan efektif.                                         |
+| **Trophy Base**             | Anti 2-Star          | Town Hall sangat sulit dijangkau, persentase bintang rendah.                                   |
+| **Farming Base**            | Resource Protection  | Storage berada di dalam, collector di luar.                                                    |
+| **Ring Base**               | Anti Ground          | Core kosong atau berlapis, memaksa pasukan berputar.                                           |
+| **Diamond Base**            | Balanced             | Simetris dengan distribusi pertahanan merata.                                                  |
+| **Box Base**                | Kompartemen Berlapis | Banyak kotak kecil untuk memperlambat pasukan.                                                 |
+| **Island Town Hall**        | Anti Queen Charge    | Town Hall terisolasi oleh dinding dan ruang kosong.                                            |
+| **Anti Electro Dragon**     | Anti Air Spam        | Bangunan tersebar, Air Defense dan Air Sweeper saling mendukung.                               |
+| **Anti Root Rider**         | Anti Ground Meta     | Inferno, Monolith (TH15+), dan kompartemen rapat untuk memutus jalur Root Rider.               |
+| **Anti Lavaloon**           | Anti Air             | Air Defense, Seeking Air Mine, dan Air Sweeper tersebar untuk mengurangi efektivitas Lavaloon. |
+| **Anti Hybrid (Miner/Hog)** | Anti Hybrid          | Bomb Tower, Giant Bomb, dan Wizard Tower melindungi jalur serangan hybrid.                     |
 
