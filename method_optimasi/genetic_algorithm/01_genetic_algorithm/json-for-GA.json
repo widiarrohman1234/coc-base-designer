@@ -788,6 +788,62 @@
       "instance": 1
     },
     {
+      "id": 1000011,
+      "name": "Wizard Tower",
+      "level": 10,
+      "size": [3, 3],
+      "category": "Defense",
+      "village": "home",
+      "instance": 1
+    },
+    {
+      "id": 1000011,
+      "name": "Wizard Tower",
+      "level": 10,
+      "size": [3, 3],
+      "category": "Defense",
+      "village": "home",
+      "instance": 2
+    },
+    {
+      "id": 1000011,
+      "name": "Wizard Tower",
+      "level": 10,
+      "size": [3, 3],
+      "category": "Defense",
+      "village": "home",
+      "instance": 3
+    },
+    {
+      "id": 1000011,
+      "name": "Wizard Tower",
+      "level": 10,
+      "size": [3, 3],
+      "category": "Defense",
+      "village": "home",
+      "instance": 4
+    },
+    {
+      "id": 1000011,
+      "name": "Wizard Tower",
+      "level": 10,
+      "size": [3, 3],
+      "category": "Defense",
+      "village": "home",
+      "instance": 5
+    },
+    {
+      "id": 1000059,
+      "name": "Workshop",
+      "level": 5,
+      "size": [4, 4],
+      "category": "Army",
+      "village": "home",
+      "instance": 1
+    }
+  ],
+  "walls":[
+    {
       "id": 1000010,
       "name": "Wall",
       "level": 14,
@@ -3486,60 +3542,6 @@
       "category": "Wall",
       "village": "home",
       "instance": 300
-    },
-    {
-      "id": 1000011,
-      "name": "Wizard Tower",
-      "level": 10,
-      "size": [3, 3],
-      "category": "Defense",
-      "village": "home",
-      "instance": 1
-    },
-    {
-      "id": 1000011,
-      "name": "Wizard Tower",
-      "level": 10,
-      "size": [3, 3],
-      "category": "Defense",
-      "village": "home",
-      "instance": 2
-    },
-    {
-      "id": 1000011,
-      "name": "Wizard Tower",
-      "level": 10,
-      "size": [3, 3],
-      "category": "Defense",
-      "village": "home",
-      "instance": 3
-    },
-    {
-      "id": 1000011,
-      "name": "Wizard Tower",
-      "level": 10,
-      "size": [3, 3],
-      "category": "Defense",
-      "village": "home",
-      "instance": 4
-    },
-    {
-      "id": 1000011,
-      "name": "Wizard Tower",
-      "level": 10,
-      "size": [3, 3],
-      "category": "Defense",
-      "village": "home",
-      "instance": 5
-    },
-    {
-      "id": 1000059,
-      "name": "Workshop",
-      "level": 5,
-      "size": [4, 4],
-      "category": "Army",
-      "village": "home",
-      "instance": 1
     }
   ]
 }
