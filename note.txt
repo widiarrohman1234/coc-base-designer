@@ -1,0 +1,7 @@
+# Backup
+conda activate coc
+conda env export --no-builds > coc_environment.yml
+
+# Restore
+conda env create -f coc_environment.yml
+conda activate coc
